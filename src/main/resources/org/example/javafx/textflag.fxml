@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<VBox minHeight="720.0" minWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.TextFlagController">
+    <AnchorPane prefHeight="700.0" prefWidth="214.0">
+        <RadioButton fx:id="button11" layoutX="100" layoutY="50" text="Красный"/>
+        <RadioButton fx:id="button12" layoutX="100" layoutY="100" text="Белый"/>
+        <RadioButton fx:id="button13" layoutX="100" layoutY="150" text="Зелёный"/>
+
+        <RadioButton fx:id="button21" layoutX="170" layoutY="50" text="Красный"/>
+        <RadioButton fx:id="button22" layoutX="170" layoutY="100" text="Белый"/>
+        <RadioButton fx:id="button23" layoutX="170" layoutY="150" text="Зелёный"/>
+
+        <RadioButton fx:id="button31" layoutX="240" layoutY="50" text="Красный"/>
+        <RadioButton fx:id="button32" layoutX="240" layoutY="100" text="Белый"/>
+        <RadioButton fx:id="button33" layoutX="240" layoutY="150" text="Зелёный"/>
+
+        <Button layoutX="100" layoutY="180" prefWidth="75" prefHeight="40" text="Нарисовать" onMouseClicked="#draw"/>
+        <Label fx:id="labelFirstColor" layoutX="100" layoutY="240"/>
+        <Label fx:id="labelSecondColor" layoutX="100" layoutY="270"/>
+        <Label fx:id="labelThirdColor" layoutX="100" layoutY="300"/>
+    </AnchorPane>
+</VBox>

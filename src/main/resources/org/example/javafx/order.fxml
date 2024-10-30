@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<VBox minHeight="720.0" minWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.OrderController">
+    <AnchorPane prefHeight="700.0" prefWidth="214.0">
+        <Button layoutX="100" layoutY="50" prefHeight="40" prefWidth="40" text="+" onMouseClicked="#firstPosInc"/>
+        <Button layoutX="150" layoutY="50" prefHeight="40" prefWidth="40" text="-" onMouseClicked="#firstPosDec"/>
+        <Button layoutX="100" layoutY="100" prefWidth="40" prefHeight="40" text="+" onMouseClicked="#secondPosInc"/>
+        <Button layoutX="150" layoutY="100" prefWidth="40" prefHeight="40" text="-" onMouseClicked="#secondPosDec"/>
+        <Button layoutX="100" layoutY="150" prefWidth="40" prefHeight="40" text="+" onMouseClicked="#thirdPosInc"/>
+        <Button layoutX="150" layoutY="150" prefWidth="40" prefHeight="40" text="-" onMouseClicked="#thirdPosDec"/>
+        <Button layoutY="200" prefWidth="75" prefHeight="30" text="Заказать" onMouseClicked="#makeOrder"/>
+        <Label  layoutX="200" layoutY="30" text="Кол-во"/>
+        <Label  layoutY="60" text="Борщ 129 р."/>
+        <Label layoutY="110" text="Щи 99 р."/>
+        <Label layoutY="160" text="Солянка 99 р."/>
+        <Label fx:id="labelFirstPosQuantity" layoutX="200" layoutY="60" text="0 шт."/>
+        <Label fx:id="labelSecondPosQuantity" layoutX="200" layoutY="110" text="0 шт."/>
+        <Label fx:id="labelThirdPosQuantity" layoutX="200" layoutY="160" text="0 шт."/>
+        <Label fx:id="labelTotal" layoutY="250" text="Итого: 0 р."/>
+
+
+    </AnchorPane>
+</VBox>

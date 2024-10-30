@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.CheckBox?>
+<VBox minHeight="720.0" minWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.CheckboxController">
+    <AnchorPane prefHeight="700.0" prefWidth="214.0">
+        <Button fx:id="button1" layoutX="100" prefHeight="50" prefWidth="50" text="A"/>
+        <Button fx:id="button2" layoutX="150" prefHeight="50" prefWidth="50" text="A"/>
+        <Button fx:id="button3" layoutX="200" prefWidth="50" prefHeight="50" text="A" />
+        <CheckBox fx:id="checkBox1" layoutX="100" layoutY="55" onMouseClicked="#CheckBox1"/>
+        <CheckBox fx:id="checkBox2" layoutX="150" layoutY="55" onMouseClicked="#CheckBox2"/>
+        <CheckBox fx:id="checkBox3" layoutX="200" layoutY="55" onMouseClicked="#CheckBox3"/>
+    </AnchorPane>
+</VBox>

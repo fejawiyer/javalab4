@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox minHeight="720.0" minWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.CalculatorController">
+    <AnchorPane prefHeight="700.0" prefWidth="214.0">
+        <TextField fx:id="equationField" editable="false" prefHeight="50" prefWidth="160" />
+        <Button fx:id="buttonCE" layoutY="50.0" mnemonicParsing="false"  onMouseClicked="#clearClicked" text="CE" />
+        <Button fx:id="buttonC" layoutX="40" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#undoClicked" text="C" />
+        <Button fx:id="buttonClear" layoutX="80" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#clearClicked" text="CLR" />
+        <Button fx:id="button1" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="1" />
+        <Button fx:id="button2" layoutX="40.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="2" />
+        <Button fx:id="button3" layoutX="80.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="3" />
+        <Button fx:id="button4" layoutY="130.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="4" />
+        <Button fx:id="button5" layoutX="40" layoutY="130.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="5" />
+        <Button fx:id="button6" layoutX="80.0" layoutY="130.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="6" />
+        <Button fx:id="button7" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="7" />
+        <Button fx:id="button8" layoutX="40.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="8" />
+        <Button fx:id="button9" layoutX="80.0" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="9" />
+        <Button fx:id="button0" layoutX="40.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#numberClicked" text="0" />
+        <Button fx:id="buttonInverse" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#inverseClicked" text="±" />
+        <Button fx:id="buttonComa" layoutX="80.0" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#comaClicked" text="." />
+        <Button fx:id="buttonDivision" layoutX="120" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#operatorClicked" text="/" />
+        <Button fx:id="buttonMultiply" layoutX="120" layoutY="90.0" mnemonicParsing="false" onMouseClicked="#operatorClicked" text="X" />
+        <Button fx:id="buttonMinus" layoutX="120" layoutY="130.0" mnemonicParsing="false" onMouseClicked="#operatorClicked" text="-" />
+        <Button fx:id="buttonPlus" layoutX="120" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#operatorClicked" text="+" />
+        <Button fx:id="buttonEq" layoutX="120" layoutY="210.0" mnemonicParsing="false" onMouseClicked="#eqClicked" text="=" />
+
+    </AnchorPane>
+</VBox>
